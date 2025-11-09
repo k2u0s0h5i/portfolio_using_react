@@ -1,0 +1,86 @@
+.achievements-section {
+  min-height: 90vh;
+  padding: 60px 100px;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  font-family: "Playfair Display", serif;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.achievements-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #111;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #ff6600;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ach-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ach-card h2 {
+  font-size: 1.7rem;
+  color: #111;
+}
+
+.ach-year {
+  color: #ff6600;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.ach-desc {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.ach-desc a {
+  color: #0d3b6e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ach-desc a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievements-section {
+    padding: 40px 20px;
+  }
+
+  .ach-card {
+    padding: 20px;
+  }
+}
