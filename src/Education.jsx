@@ -1,5 +1,6 @@
 import React from "react";
 import "./Education.css";
+import mainimg from './assets/main.jpeg';
 
 function Education() {
   return (
