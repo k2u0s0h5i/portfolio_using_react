@@ -1,15 +1,14 @@
 import './Header.css';
-import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <h1>Kushala</h1>
+      <h1><Link to ='/'>Kushala</Link></h1>
       <nav>
         <ul>
-          <li><Link to="/education">Education</Link></li>
-          <li><Link to="#">Internship</Link></li>
-          <li><Link to="#">Achievements</Link></li>
+          <li><a href="#">Education</a></li> 
+          <li><a href="#">Internship</a></li> 
+          <li><a href="#">Achievements</a></li>
         </ul>
       </nav>
     </header>
