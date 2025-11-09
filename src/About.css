@@ -1,0 +1,114 @@
+/* ---------- GENERAL LAYOUT ---------- */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 90vh;
+  padding: 60px 20px;
+background: url('./assets/background.jpg') no-repeat center center/cover;
+  text-align: left;
+  animation: fadeIn 1.2s ease-in-out;
+  flex-wrap: wrap;
+}
+
+/* ---------- PROFILE IMAGE ---------- */
+.home-content img {
+  width: 260px;
+  height: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home-content img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- TEXT CONTENT ---------- */
+.home-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.home-content h1 span {
+  color: #ff6600;
+}
+
+.home-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* ---------- CTA BUTTON (OPTIONAL) ---------- */
+.home-content button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-content button:hover {
+  background-color: #e45a00;
+  transform: translateY(-2px);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 992px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .home-content img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .home-content button {
+    margin: 0 auto;
+  }
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- SMALL DETAILS ---------- */
+.home-content::selection {
+  background: #ff6600;
+  color: #fff;
+}
+
