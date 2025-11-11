@@ -1,7 +1,7 @@
 .achievements-section {
   min-height: 90vh;
   padding: 60px 100px;
-  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+background: url('./assets/background.jpg') no-repeat center center/cover;
   font-family: "Playfair Display", serif;
   animation: fadeIn 1.2s ease-in-out;
 }
